@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+}
+.header{
+         min-height: 100vh;
+         width: 100%;
+         background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.5)),url(img/front.jpg);
+         background-position: center;
+         background-size: cover;
+         position: relative;
+}
+nav{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1% 6%;
+}
+nav h1 a{
+           font-size: 45px;
+           color: white;
+           text-decoration: none;
+           padding: 0 0 0 15%;
+}
+.nav-links{
+         padding: 10px 0 0 0 ;
+}
+.nav-links ul li{
+       list-style: none;
+       display: inline-block;
+       position: relative; 
+       padding:8px 12px; 
+}
+.nav-links ul li a{
+         text-decoration: none;
+         color: white;
+         font-size: 22px;
+         font-weight: 500;
+}
+.nav-links ul li::after{
+         content: '';
+         width: 0%;
+         height: 2px;
+         background: white;
+         margin-left: 0px;
+         display: block;
+         transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+         width: 100%;
+}
+.text-box{
+         width: 90%;
+         color: white;
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%);
+         text-align:center;
+}
+.text-box h1{
+         font-size: 60px;
+}
+.text-box p{
+         margin: 10px 0 20px;
+         color: white;
+         font-size: 19px;
+}
+.text-box a{
+         text-decoration: none;
+         color: black;
+         background-color: white;
+         font-size: 26px;
+         padding: 5px 20px;
+         border: 2px solid black;
+}
+.course{
+         width: 80%;
+         margin: auto;
+         text-align: center;
+         padding-top: 100px;
+}
+.course h1{
+         font-size: 46px;
+         font-weight: 500;
+}
+.course p{
+         color: #000;
+         font-size: 20px;
+         font-weight: 300;
+         line-height: 22px;
+         padding: 10px;
+}
+.row{
+         display: flex;
+         justify-content: space-between;
+         text-align: center;
+         margin-top: 5%;
+}
+.course-col{
+         flex-basis: 31%;
+         background: #fff3f3;
+         border-radius: 5px;
+         margin-bottom: 5%;
+         padding: 20px 12px;
+         box-sizing: border-box;
+         transform: 0.5s;
+}
+.course-col p{
+         font-size:16px;
+}
+.course-col h2{
+         text-align: center;
+         font-weight: 600;
+         margin: 10px 0px;
+}
+.course-col:hover{
+         box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.campus{
+         width: 80%;
+         text-align: center;
+         margin: auto;
+         padding-top: 100px;
+}
+.campus h1{
+        font-size: 46px;
+        font-weight: 500;
+}
+.campus p{
+        color: #000;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+}
+.campus-col{
+         flex-basis: 32%;
+         border-radius: 10px;
+         margin-bottom: 30px;
+         position: relative;
+         overflow: hidden;
+         margin-bottom: 5%;
+}
+.campus-col img{
+         width: 100%;
+         height: 100%;
+         display: block;
+}
+.layer{
+         background: transparent;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         transition: 0.5s;
+}
+.layer:hover{
+        background: rgba(7, 206, 241, 0.7);
+}
+.layer h3{
+         width: 100%;
+         font-weight: 500;
+         color: #fff;
+         font-size: 26px;
+         bottom: 0;
+         left: 50%;
+         transform: translate(-50%);
+         position: absolute;
+         opacity: 0;
+         transition: 0.5s;
+}
+.layer:hover h3{
+         opacity: 1;
+         bottom: 49%;
+}
+/* ---------------facilities------------ */
+.facility{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding-top: 100px;
+}
+.facility h1{
+       font-size: 46px;
+       font-weight: 500;
+}
+.facility p{
+       color: #000;
+       font-size: 20px;
+       font-weight: 300;
+       line-height: 22px;
+       padding-top: 10px;
+}
+.facility-fac{
+        flex-basis: 30%;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 10%;
+}
+.facility-fac img{
+        width: 100%;
+        height: 80%;
+}
+.facility-fac:hover img{
+        box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+}
+.facility-fac h1{
+         font-size: 25px;
+         font-weight: 500;
+         text-align: left;
+         padding: 5px 0 5px 0;
+}
+.facility-fac p{
+         font-weight: 300;
+         text-align: left;
+         font-size: 19px;
+}
+/* -------------call to action---------- */
+.cta{
+         width: 80%;
+         margin: 100px auto;
+         background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/cta.jpg);
+         background-position: center;
+         background-size: cover;
+         border-radius: 10px;
+         padding: 100px 0px;
+         text-align: center;
+}
+.cta h1{
+         color: #fff;
+         margin-bottom: 15px;
+         padding: 0;
+         font-size: 30px;
+         padding: 10px;
+}
+.cta a{
+         text-decoration: none;
+         background-color: red;
+         border: 2px solid #fff;
+         color: #fff;
+         padding: 10px 20px;
+         font-size: 20px;
+         border-radius: 8px;
+}
+/* ------------footer--------- */
+.footer{
+         width: 100%;
+         text-align: center;
+         background-color: #000;
+         color: #fff;
+         margin: 100px 0 0 0 ;
+         padding: 10px;
+}
